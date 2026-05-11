@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: BeccaForearth/beccaforearth
   branch: main
-
-# Netlify Identity handles authentication
-publish_mode: editorial_workflow
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 # Where uploaded images/files are stored
 media_folder: "assets/uploads"
