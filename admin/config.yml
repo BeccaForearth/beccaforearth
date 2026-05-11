@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity handles authentication
+publish_mode: editorial_workflow
+
+# Where uploaded images/files are stored
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Site URL for previews
+site_url: https://beccaforearth.com
+
+# Collections Rebecca can manage
+collections:
+
+  # ─── BLOG POSTS ───────────────────────────────────────────────────────────
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "blog.html"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "The headline of your blog post" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD MMMM YYYY", time_format: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Shifting Perspectives", "Field Notes", "Conservation", "Behind the Lens"], default: "Shifting Perspectives" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", hint: "Main image for the blog post" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on the blog listing page (2–3 sentences)" }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Full blog post content" }
+      - { label: "Published", name: "published", widget: "boolean", default: true, hint: "Uncheck to save as draft" }
+
+  # ─── GALLERY IMAGES ───────────────────────────────────────────────────────
+  - name: "gallery"
+    label: "Gallery Images"
+    label_singular: "Gallery Image"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "portfolio.html"
+    fields:
+      - { label: "Image Title", name: "title", widget: "string", hint: "Short descriptive title for this image" }
+      - { label: "Photo", name: "image", widget: "image", hint: "Upload the gallery photograph" }
+      - { label: "Category", name: "category", widget: "select", options: ["Rebecca's Favourites", "Wildlife", "Woodland", "Portrait", "Land & Sky", "Intimate"], hint: "Which gallery tab should this appear under?" }
+      - { label: "Alt Text", name: "alt", widget: "string", hint: "Describe the image for accessibility and SEO (e.g. 'Close-up of a white rhino in Kenya')" }
+      - { label: "Display Order", name: "order", widget: "number", default: 99, hint: "Lower numbers appear first in the gallery" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Show this image in the homepage gallery preview?" }
+
+  # ─── PROJECTS ─────────────────────────────────────────────────────────────
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Client / Partner", name: "client", widget: "string", required: false, hint: "Organisation or individual this project was for" }
+      - { label: "Project Date", name: "date", widget: "datetime", date_format: "MMMM YYYY", time_format: false }
+      - { label: "Cover Image", name: "cover_image", widget: "image" }
+      - { label: "Category", name: "category", widget: "select", options: ["Conservation Photography", "Ethical Brand Photography", "Speaking Engagement", "Collaboration", "Documentary"] }
+      - { label: "Summary", name: "summary", widget: "text", hint: "2–3 sentence description of the project" }
+      - { label: "Full Description", name: "body", widget: "markdown", required: false }
+      - { label: "Published", name: "published", widget: "boolean", default: true }

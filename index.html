@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rebecca Bennett — conservation photographer, ethical brand storyteller, and keynote speaker based in London. Wildlife, woodland, and portrait photography that reminds you why the world matters. Give back to Earth what Earth gives to us.">
+    <meta name="keywords" content="conservation photographer, ethical brand photography, wildlife photographer UK, documentary photography, keynote speaker conservation, Rebecca Bennett photographer">
+    <meta name="author" content="Rebecca Bennett">
+    <meta name="robots" content="index, follow">
+    <title>Rebecca Bennett | Conservation Photographer, Ethical Brand Storyteller & Keynote Speaker | London</title>
+    <!-- Canonical -->
+    <link rel="canonical" href="https://beccaforearth.com/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beccaforearth.com/">
+    <meta property="og:title" content="Rebecca Bennett | Conservation Photographer & Storyteller">
+    <meta property="og:description" content="Powerful conservation and ethical brand photography by Rebecca Bennett. Wildlife, woodland, and portrait work that reminds you why the world matters.">
+    <meta property="og:image" content="https://beccaforearth.com/assets/RFE/rbb-rhino2-500x333.jpg">
+    <meta property="og:site_name" content="Rebecca Bennett | Conservation Photographer & Storyteller">
+    <meta property="og:locale" content="en_GB">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rebecca Bennett | Conservation Photographer & Storyteller">
+    <meta name="twitter:description" content="Powerful conservation and ethical brand photography. Wildlife, woodland, and portrait work that reminds you why the world matters.">
+    <meta name="twitter:image" content="https://beccaforearth.com/assets/RFE/rbb-rhino2-500x333.jpg">
+    <!-- Structured Data: Person + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rebecca Bennett",
+      "url": "https://beccaforearth.com",
+      "image": "https://beccaforearth.com/assets/RFE/AA-rebecca/icelandportrait2-2.jpg",
+      "sameAs": [
+        "https://www.instagram.com/rebeccaforearth",
+        "https://www.linkedin.com/in/rebeccaforearth"
+      ],
+      "jobTitle": "Conservation Photographer & Storyteller",
+      "description": "Rebecca Bennett is a UK-based conservation photographer, ethical brand photographer, and keynote speaker dedicated to protecting wild places through powerful visual storytelling.",
+      "knowsAbout": ["Conservation Photography", "Wildlife Photography", "Ethical Brand Photography", "Documentary Photography", "Environmental Storytelling"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Rebecca Bennett Photography",
+      "url": "https://beccaforearth.com",
+      "description": "Conservation photographer, ethical brand photographer, and keynote speaker. Photography that reminds you why the world matters.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://beccaforearth.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --gold: #c8a96e;
+            --dark: #1a1a1a;
+            --light-bg: #f9f7f4;
+            --text: #333;
+            --text-light: #666;
+        }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; }
+
+        /* HEADER */
+        header.site-header { background: #fff; border-bottom: 1px solid #e8e4de; position: sticky; top: 0; z-index: 1000; }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 1.2rem 2rem 0.5rem; }
+        .site-logo { text-align: center; text-decoration: none; color: var(--dark); display: block; margin-bottom: 0.5rem; }
+        .site-logo .name { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 400; letter-spacing: 0.25em; display: block; }
+        .site-logo .tagline { font-size: 0.62rem; font-weight: 400; letter-spacing: 0.3em; color: var(--text-light); display: block; }
+        nav.main-nav { display: flex; flex-wrap: wrap; justify-content: center; padding: 0.5rem 0 0.2rem; }
+        nav.main-nav a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dark); text-decoration: none; padding: 0.4rem 0.9rem; transition: color 0.2s; }
+        nav.main-nav a:hover, nav.main-nav a.active { color: var(--gold); }
+        nav.main-nav .sep { color: #ccc; font-size: 0.7rem; line-height: 2.2; }
+
+        /* HERO SLIDESHOW */
+        .hero-slider { position: relative; width: 100%; height: 90vh; min-height: 500px; overflow: hidden; background: #111; }
+        .slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.4s ease-in-out; }
+        .slide.active { opacity: 1; }
+        .slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%); }
+        .hero-content { position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; color: #fff; }
+        .hero-tag { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0.85; }
+        .hero-content h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 4.5rem); font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.25; max-width: 900px; margin-bottom: 2rem; }
+        .hero-cta { display: inline-flex; align-items: center; gap: 0.6rem; border: 1px solid rgba(255,255,255,0.7); color: #fff; text-decoration: none; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; padding: 0.85rem 2.5rem; transition: background 0.3s; }
+        .hero-cta:hover { background: rgba(255,255,255,0.15); }
+        .slider-arrows { position: absolute; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; pointer-events: none; }
+        .slider-arrows button { pointer-events: all; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.4); color: #fff; width: 46px; height: 46px; cursor: pointer; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .slider-arrows button:hover { background: rgba(0,0,0,0.65); }
+        .slider-dots { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 20; display: flex; gap: 0.5rem; }
+        .slider-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: background 0.3s; }
+        .slider-dots span.active { background: #fff; }
+
+        /* INTRO TAGLINE */
+        .intro-tagline { background: #fff; text-align: center; padding: 3.5rem 2rem; border-bottom: 1px solid #eee; }
+        .intro-tagline p { font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.4rem; }
+        .intro-tagline strong { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 400; color: var(--dark); display: block; }
+
+        /* SERVICES */
+        .services { background: #fff; padding: 5rem 2rem; }
+        .services-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+        .service-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; margin-bottom: 1.5rem; }
+        .service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 0.4rem; color: var(--dark); }
+        .service-sub { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.8rem; display: block; }
+        .service-card p { font-size: 0.85rem; line-height: 1.85; color: var(--text-light); margin-bottom: 1.5rem; }
+        .btn-gold { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--gold); color: #fff; text-decoration: none; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; padding: 0.85rem 1.8rem; transition: background 0.3s; }
+        .btn-gold:hover { background: #b5913a; }
+
+        /* TESTIMONIALS */
+        .testimonials { position: relative; background-image: url('/assets/RFE/Woodland/rb_woodland-1-2.jpg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 7rem 2rem; overflow: hidden; }
+        .testimonials::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.75); }
+        .testimonials-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; text-align: center; }
+        .testimonial-slide { display: none; }
+        .testimonial-slide.active { display: block; }
+        .testimonial-slide blockquote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2.5vw, 1.6rem); font-style: italic; font-weight: 300; color: #fff; line-height: 1.85; margin-bottom: 2rem; }
+        .testimonial-slide cite { display: block; font-style: normal; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+        .cite-role { font-size: 0.62rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.5); text-transform: uppercase; }
+        .testimonial-dots { display: flex; justify-content: center; gap: 0.6rem; margin-top: 2.5rem; }
+        .testimonial-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.3s; }
+        .testimonial-dots span.active { background: var(--gold); }
+
+        /* GALLERY */
+        .gallery-section { background: var(--light-bg); padding: 5rem 2rem; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 3rem; }
+        .eyebrow { font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.8rem; }
+        .section-header h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
+        .section-header p { font-size: 0.85rem; line-height: 1.9; color: var(--text-light); }
+        .gallery-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem; margin-bottom: 2.5rem; }
+        .gallery-filters button { background: none; border: 1px solid #ccc; font-family: 'Montserrat', sans-serif; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.5rem 1.1rem; cursor: pointer; color: var(--text-light); transition: all 0.2s; }
+        .gallery-filters button.active, .gallery-filters button:hover { background: var(--dark); border-color: var(--dark); color: #fff; }
+        .gallery-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+        .gallery-item { position: relative; overflow: hidden; aspect-ratio: 1; cursor: pointer; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+        .gallery-item:hover img { transform: scale(1.06); }
+        .gallery-item .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0); display: flex; align-items: flex-end; padding: 1rem; transition: background 0.3s; }
+        .gallery-item:hover .overlay { background: rgba(0,0,0,0.38); }
+        .gallery-item .overlay span { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; opacity: 0; transition: opacity 0.3s; }
+        .gallery-item:hover .overlay span { opacity: 1; }
+
+        /* NEWSLETTER */
+        .newsletter { background: #fff; padding: 5rem 2rem; text-align: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .newsletter h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; color: var(--dark); margin-bottom: 0.5rem; }
+        .newsletter p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 2rem; }
+        .newsletter-form { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; max-width: 600px; margin: 0 auto; }
+        .newsletter-form input { flex: 1; min-width: 180px; border: 1px solid #ccc; padding: 0.85rem 1.2rem; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; outline: none; transition: border-color 0.2s; }
+        .newsletter-form input:focus { border-color: var(--gold); }
+        .newsletter-form button { background: var(--gold); color: #fff; border: none; padding: 0.85rem 2.2rem; font-family: 'Montserrat', sans-serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+        .newsletter-form button:hover { background: #b5913a; }
+
+        /* SPEAKING */
+        .speaking { position: relative; background-image: url('/assets/RFE/rbb-talks1-500x333.jpg'); background-size: cover; background-position: center top; padding: 9rem 2rem; text-align: center; overflow: hidden; }
+        .speaking::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.68); }
+        .speaking-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; color: #fff; }
+        .speaking-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; letter-spacing: 0.05em; margin-bottom: 1rem; }
+        .speaking-inner p { font-size: 0.85rem; line-height: 1.9; opacity: 0.85; margin-bottom: 2.5rem; }
+        .btn-outline-white { display: inline-block; border: 1px solid rgba(255,255,255,0.7); color: #fff; text-decoration: none; font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; padding: 0.9rem 2.5rem; transition: background 0.3s; }
+        .btn-outline-white:hover { background: rgba(255,255,255,0.15); }
+
+        /* PHOTOGRAPHER QUOTE */
+        .photographer-quote { background: var(--light-bg); padding: 5rem 2rem; text-align: center; }
+        .photographer-quote blockquote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.3rem, 3vw, 2rem); font-style: italic; font-weight: 300; color: var(--dark); line-height: 1.75; max-width: 860px; margin: 1rem auto 0; }
+
+        /* BLOG */
+        .blog-section { background: #fff; padding: 5rem 2rem; }
+        .blog-grid { max-width: 1200px; margin: 3rem auto 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+        .blog-card { display: flex; flex-direction: column; }
+        .blog-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 1.2rem; }
+        .blog-date { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; display: block; }
+        .blog-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--dark); margin-bottom: 0.8rem; line-height: 1.4; }
+        .blog-card p { font-size: 0.83rem; line-height: 1.85; color: var(--text-light); flex: 1; margin-bottom: 1.2rem; }
+        .read-more { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dark); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; align-self: flex-start; transition: color 0.2s; }
+        .read-more:hover { color: var(--gold); }
+
+        /* FOOTER */
+        footer.site-footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 4rem 2rem 2rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .footer-brand .f-name { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; letter-spacing: 0.2em; color: #fff; display: block; margin-bottom: 0.3rem; }
+        .footer-brand .f-tag { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 2rem; display: block; }
+        .footer-img-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.3rem; }
+        .footer-img-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: brightness(0.75); transition: filter 0.3s; }
+        .footer-img-grid img:hover { filter: brightness(1); }
+        .footer-links h4 { font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+        .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links ul li a { font-size: 0.78rem; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
+        .footer-links ul li a:hover { color: var(--gold); }
+        .footer-bottom { max-width: 1200px; margin: 1.5rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer-bottom p { font-size: 0.72rem; }
+        .footer-socials { display: flex; gap: 1.2rem; }
+        .footer-socials a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.1em; transition: color 0.2s; }
+        .footer-socials a:hover { color: var(--gold); }
+
+        /* LIGHTBOX */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 9999; align-items: center; justify-content: center; }
+        .lightbox.open { display: flex; }
+        .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+        .lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; color: #fff; font-size: 2.5rem; cursor: pointer; background: none; border: none; line-height: 1; }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .services-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .blog-grid { grid-template-columns: 1fr; max-width: 560px; margin: 3rem auto 0; }
+            .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+        }
+        @media (max-width: 600px) {
+            .site-logo .name { font-size: 1.6rem; }
+            nav.main-nav a { padding: 0.3rem 0.5rem; font-size: 0.55rem; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Professional Services Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown:focus-within .dropdown-menu { display: block; }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-top: 2px solid #b8964a;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            min-width: 240px;
+            z-index: 100;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #374151;
+            white-space: nowrap;
+            border-bottom: 1px solid #f3f4f6;
+            transition: background 0.15s, color 0.15s;
+        }
+        .dropdown-menu a:last-child { border-bottom: none; }
+        .dropdown-menu a:hover { background: #fdf8f0; color: #b8964a; }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="site-logo">
+            <span class="name">REBECCA BENNETT</span>
+            <span class="tagline">Conservationist &nbsp;|&nbsp; Photographer &nbsp;|&nbsp; Storyteller</span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <span class="sep">|</span>
+            <div class="nav-dropdown">
+                    <a href="professional-services.html" class="dropdown-trigger hover:text-amber-600 transition flex items-center gap-1">Professional Services</a>
+                    <div class="dropdown-menu">
+                        <a href="photography-for-ethical-brands.html">Photography for Ethical Brands</a>
+                        <a href="documentary-conservation-photography.html">Documentary &amp; Conservation</a>
+                        <a href="visual-marketing.html">Visuals for Atmosphere</a>
+                        <a href="talks.html">Provocative Speaking Engagements</a>
+                    </div>
+                </div>
+            <span class="sep">|</span>
+            <a href="documentary-conservation-photography.html">Conservation First</a>
+            <span class="sep">|</span>
+            <a href="about.html">About</a>
+            <span class="sep">|</span>
+            <a href="portfolio.html">The Gallery</a>
+            <span class="sep">|</span>
+            <a href="blog.html">Shifting Perspectives: The Blog</a>
+            <span class="sep">|</span>
+            <a href="collaborations.html">Collaborations</a>
+            <span class="sep">|</span>
+            <a href="talks.html">Talks</a>
+            <span class="sep">|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SLIDESHOW -->
+<section class="hero-slider" id="heroSlider">
+    <div class="slide active" style="background-image:url('/assets/RFE/BW-12.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Rebeccas favourites/rb_wildlife-orangutan.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Rebeccas favourites/rb_wildlife-elephant1.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Woodland/rb_woodland-1-2.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Land & Sky/rb_landsky-19.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Portrait/portraituganda1.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Rebeccas favourites/rb_wildlife-hippo1.jpg')"></div>
+    <div class="slide" style="background-image:url('/assets/RFE/Intimate/rb_intimate-30.jpg')"></div>
+
+    <div class="hero-content">
+        <p class="hero-tag">Conservation Photographer &amp; Storyteller</p>
+        <h1 id="heroHeading">Every Wild Place a Fragile Truth</h1>
+        <a href="portfolio.html" class="hero-cta">Explore &rsaquo;</a>
+    </div>
+    <div class="slider-arrows">
+        <button onclick="changeSlide(-1)" aria-label="Previous">&#8249;</button>
+        <button onclick="changeSlide(1)" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+</section>
+
+<!-- INTRO TAGLINE -->
+<div class="intro-tagline">
+    <p>Photography that doesn't just show the world—</p>
+    <strong>it reminds you why it matters.</strong>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="/assets/RFE/rbb-rhino2-500x333.jpg" alt="Conservation Photography">
+            <h3>Conservation Photography</h3>
+            <span class="service-sub">Impact &amp; Advocacy</span>
+            <p>I create compelling imagery that raises awareness, strengthens advocacy, and helps your mission reach the audiences who can make a difference.</p>
+            <a href="documentary-conservation-photography.html" class="btn-gold">Let's Document &rsaquo;</a>
+        </div>
+        <div class="service-card">
+            <img src="/assets/RFE/Rebeccas favourites/webadds-16-1.jpg" alt="Ethical Brand Photography">
+            <h3>Ethical Brand Photography</h3>
+            <span class="service-sub">Business Growth &amp; Consumer Trust</span>
+            <p>I embed your values into powerful visuals that speak truth to your brand. The result? Credibility, customer loyalty, and sustained long-haul growth.</p>
+            <a href="photography-for-ethical-brands.html" class="btn-gold">Let's Collaborate &rsaquo;</a>
+        </div>
+        <div class="service-card">
+            <img src="/assets/RFE/rbb-talks1-500x333.jpg" alt="Speaking Engagements">
+            <h3>Speaking Engagements</h3>
+            <span class="service-sub">Provocative, Empowering &amp; Transformative</span>
+            <p>Drawing from lived experience, academic insight, personal journals, and professional endeavours, these are inspirational journeys for everyone.</p>
+            <a href="talks.html" class="btn-gold">Explore Our Talks &rsaquo;</a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <div class="testimonials-inner">
+        <div class="testimonial-slide active">
+            <blockquote>&ldquo;We often talk about &lsquo;putting things in to perspective&rsquo; but what does that actually mean? Rebecca&rsquo;s talk made me really think about perspective and, how just by shifting our focus&hellip; through the lens of a camera, our own biases and general way of thinking&hellip; we can achieve clarity and meaning. Rebecca talks with passion, wisdom and creativity. She really instils a sense of wonder and wanderlust for life, for each other and for our natural world.&rdquo;</blockquote>
+            <cite>&mdash; Rebecca Johnson &mdash;</cite>
+            <span class="cite-role">Journalist</span>
+        </div>
+        <div class="testimonial-slide">
+            <blockquote>&ldquo;Rebecca&rsquo;s ability to disarm others is breathtaking. She is a human who really cares &mdash; and wants to help others to care &mdash; about this miraculous place we call Earth.&rdquo;</blockquote>
+            <cite>&mdash; Paul Maiteny &mdash;</cite>
+            <span class="cite-role">Ecologist, Author, Psychotherapist</span>
+        </div>
+        <div class="testimonial-slide">
+            <blockquote>&ldquo;Aside from the stunning photography, I was floored by Rebecca&rsquo;s passion for every last thing on this planet. I&rsquo;ve never known an individual to be as passionate about ants and earthworms as she is elephants, education, and whole other cultures altogether.&rdquo;</blockquote>
+            <cite>&mdash; Vicky Bruce &mdash;</cite>
+            <span class="cite-role">Director</span>
+        </div>
+        <div class="testimonial-slide">
+            <blockquote>&ldquo;Rebecca epitomises what it means to be a Collectivist. It is clear this person cares for everyone on this Earth as if they were her own flesh and blood. She shares wisdom, insight and kindness through her words and her work.&rdquo;</blockquote>
+            <cite>&mdash; Scott Harper &mdash;</cite>
+            <span class="cite-role">Senior Lecturer</span>
+        </div>
+        <div class="testimonial-slide">
+            <blockquote>&ldquo;In her talk aptly titled &lsquo;Shifting Perspectives&rsquo;, Rebecca managed to undo in a mere 90 minutes, a perspective I&rsquo;ve held for most of my adult life. She&rsquo;s given me powerful new meaning on what it means to be a custodian, and how we can each lead a fulfilling life.&rdquo;</blockquote>
+            <cite>&mdash; Mike Kirkham &mdash;</cite>
+            <span class="cite-role">Founder, Wise Heart Project</span>
+        </div>
+        <div class="testimonial-slide">
+            <blockquote>&ldquo;Rebecca is very inspirational. She got me thinking more about life and seeing things differently. I learnt that everyone has different views and it&rsquo;s ok to see things differently.&rdquo;</blockquote>
+            <cite>&mdash; Molly Curly &mdash;</cite>
+            <span class="cite-role">Year 10 Student</span>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+    <div class="section-header">
+        <span class="eyebrow">The Gallery</span>
+        <h2>Because Perspective is Powerful</h2>
+        <p>The images in this gallery endeavour to showcase our world&rsquo;s natural heritage, with categories and series coming to life under different circumstances and unique perspectives. From wild spaces to wild life, abstract escapism to seductive black &amp; white, every image touches upon a perspective of conservation and our shared humanity.</p>
+    </div>
+    <div class="gallery-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="favourites">Rebecca&rsquo;s Favourites</button>
+        <button data-filter="wildlife">Wildlife</button>
+        <button data-filter="woodland">Woodland</button>
+        <button data-filter="portrait">Portrait</button>
+        <button data-filter="landsky">Land &amp; Sky</button>
+        <button data-filter="intimate">Intimate</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-cat="favourites"><img src="/assets/RFE/Rebeccas favourites/rb_wildlife-orangutan.jpg" alt="Orangutan" loading="lazy"><div class="overlay"><span>Rebecca&rsquo;s Favourites</span></div></div>
+        <div class="gallery-item" data-cat="wildlife"><img src="/assets/RFE/Wildlife/rb_wildlife-cheetah1.jpg" alt="Cheetah" loading="lazy"><div class="overlay"><span>Wildlife</span></div></div>
+        <div class="gallery-item" data-cat="woodland"><img src="/assets/RFE/Woodland/rb_woodland-1-2.jpg" alt="Woodland" loading="lazy"><div class="overlay"><span>Woodland</span></div></div>
+        <div class="gallery-item" data-cat="portrait"><img src="/assets/RFE/Portrait/portraituganda1.jpg" alt="Portrait" loading="lazy"><div class="overlay"><span>Portrait</span></div></div>
+        <div class="gallery-item" data-cat="landsky"><img src="/assets/RFE/Land & Sky/rb_landsky-19.jpg" alt="Land and Sky" loading="lazy"><div class="overlay"><span>Land &amp; Sky</span></div></div>
+        <div class="gallery-item" data-cat="intimate"><img src="/assets/RFE/Intimate/rb_intimate-30.jpg" alt="Intimate" loading="lazy"><div class="overlay"><span>Intimate</span></div></div>
+        <div class="gallery-item" data-cat="favourites"><img src="/assets/RFE/Rebeccas favourites/rb_wildlife-hippo1.jpg" alt="Hippo" loading="lazy"><div class="overlay"><span>Rebecca&rsquo;s Favourites</span></div></div>
+        <div class="gallery-item" data-cat="wildlife"><img src="/assets/RFE/Wildlife/rb_wildlife-elephant1.jpg" alt="Elephant" loading="lazy"><div class="overlay"><span>Wildlife</span></div></div>
+        <div class="gallery-item" data-cat="woodland"><img src="/assets/RFE/Woodland/WoodlandHomePage-2.jpg" alt="Woodland" loading="lazy"><div class="overlay"><span>Woodland</span></div></div>
+        <div class="gallery-item" data-cat="portrait"><img src="/assets/RFE/Portrait/portraituganda3.jpg" alt="Portrait Uganda" loading="lazy"><div class="overlay"><span>Portrait</span></div></div>
+        <div class="gallery-item" data-cat="landsky"><img src="/assets/RFE/Land & Sky/rb_landsky-9.jpg" alt="Land and Sky" loading="lazy"><div class="overlay"><span>Land &amp; Sky</span></div></div>
+        <div class="gallery-item" data-cat="intimate"><img src="/assets/RFE/Intimate/rb_intimate-14.jpg" alt="Intimate" loading="lazy"><div class="overlay"><span>Intimate</span></div></div>
+        <div class="gallery-item" data-cat="wildlife"><img src="/assets/RFE/Wildlife/rb_wildlife-tiger1.jpg" alt="Tiger" loading="lazy"><div class="overlay"><span>Wildlife</span></div></div>
+        <div class="gallery-item" data-cat="favourites"><img src="/assets/RFE/Rebeccas favourites/RB_LeadingImages-1W-1.jpg" alt="Featured" loading="lazy"><div class="overlay"><span>Rebecca&rsquo;s Favourites</span></div></div>
+        <div class="gallery-item" data-cat="woodland"><img src="/assets/RFE/Woodland/rbb-13.jpg" alt="Woodland" loading="lazy"><div class="overlay"><span>Woodland</span></div></div>
+        <div class="gallery-item" data-cat="portrait"><img src="/assets/RFE/Portrait/PEOPLE-Category-Image-2.jpg" alt="Portrait" loading="lazy"><div class="overlay"><span>Portrait</span></div></div>
+        <div class="gallery-item" data-cat="landsky"><img src="/assets/RFE/Land & Sky/rb_landsky-6.jpg" alt="Land and Sky" loading="lazy"><div class="overlay"><span>Land &amp; Sky</span></div></div>
+        <div class="gallery-item" data-cat="intimate"><img src="/assets/RFE/Intimate/rb_intimate-5.jpg" alt="Intimate" loading="lazy"><div class="overlay"><span>Intimate</span></div></div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <span class="eyebrow">Wide Angle</span>
+    <h2>Your quarterly dose of sunshine for the soul.</h2>
+    <p>Stories, images, and reflections from the field &mdash; delivered four times a year.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+        <input type="text" placeholder="Name *" required>
+        <input type="email" placeholder="Email *" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- SPEAKING -->
+<section class="speaking">
+    <div class="speaking-inner">
+        <span class="eyebrow" style="color:var(--gold);display:block;margin-bottom:1.2rem;">Speaking Engagements</span>
+        <h2>Open Minds Change Worlds.</h2>
+        <p>Extraordinary talks to provoke, empower and transform. Drawing from lived experience, academic insight, personal journals and professional endeavours &mdash; these are inspirational journeys for everyone.</p>
+        <a href="talks.html" class="btn-outline-white">Explore Our Talks &rsaquo;</a>
+    </div>
+</section>
+
+<!-- PHOTOGRAPHER QUOTE -->
+<section class="photographer-quote">
+    <span class="eyebrow">As a Photographer</span>
+    <blockquote>&ldquo;I choose to lend my vision to those who lead with heart; who carry the weight of social responsibility and share values that champion ethical choices.&rdquo;</blockquote>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section">
+    <div class="section-header">
+        <span class="eyebrow">Blog</span>
+        <h2>What&rsquo;s the shot and why does it matter?</h2>
+    </div>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <img src="/assets/RFE/shifting-perspectives_rebecca.jpg" alt="Rebecca Bennett conservation photographer in the field — Shifting Perspectives blog">
+            <span class="blog-date">Shifting Perspectives</span>
+            <h3>I am not a social media content creator. I am a conservation photographer.</h3>
+            <p>My life &mdash; professionally, personally, and spiritually &mdash; revolves around the natural world and the stories it holds. Every image I make is an act of witness.</p>
+            <a href="contact.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="/assets/RFE/AA-rebecca/icelandportrait2-2.jpg" alt="Rebecca Bennett portrait in Iceland — field notes from a conservation photographer">
+            <span class="blog-date">Field Notes</span>
+            <h3>And so, it begins. With my heart a veritable kaleidoscope of emotions.</h3>
+            <p>Hope, excitement, a touch of trepidation, and an overwhelming sense of purpose. The journey into the wild is never just about the photographs.</p>
+            <a href="contact.html" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="f-name">REBECCA BENNETT</span>
+            <span class="f-tag">Conservationist &nbsp;|&nbsp; Photographer &nbsp;|&nbsp; Storyteller</span>
+            <div class="footer-img-grid">
+                <img src="/assets/RFE/Rebeccas favourites/rb_wildlife-orangutan.jpg" alt="">
+                <img src="/assets/RFE/Intimate/rb_intimate-30.jpg" alt="">
+                <img src="/assets/RFE/Portrait/portraituganda1.jpg" alt="">
+                <img src="/assets/RFE/Wildlife/rb_wildlife-cheetah1.jpg" alt="">
+                <img src="/assets/RFE/Woodland/rb_woodland-1-2.jpg" alt="">
+                <img src="/assets/RFE/Land & Sky/rb_landsky-19.jpg" alt="">
+                <img src="/assets/RFE/Rebeccas favourites/rb_wildlife-hippo1.jpg" alt="">
+                <img src="/assets/RFE/Wildlife/rb_wildlife-tiger1.jpg" alt="">
+                <img src="/assets/RFE/Rebeccas favourites/RB_LeadingImages-1W-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="talks.html">Discover our Transformative Talks</a></li>
+                <li><a href="photography-for-ethical-brands.html">Elevate Your Story Through Commercial Photography</a></li>
+                <li><a href="documentary-conservation-photography.html">Raise Awareness with Documentary Photography</a></li>
+                <li><div class="nav-dropdown">
+                    <a href="professional-services.html" class="dropdown-trigger hover:text-amber-600 transition flex items-center gap-1">Professional Services</a>
+                    <div class="dropdown-menu">
+                        <a href="photography-for-ethical-brands.html">Photography for Ethical Brands</a>
+                        <a href="documentary-conservation-photography.html">Documentary &amp; Conservation</a>
+                        <a href="visual-marketing.html">Visuals for Atmosphere</a>
+                        <a href="talks.html">Provocative Speaking Engagements</a>
+                    </div>
+                </div></li>
+                <li><a href="portfolio.html">Shifting Perspectives in our Gallery</a></li>
+                <li><a href="about.html">Who We Are: Bridging Curiosity and Connection</a></li>
+                <li><a href="contact.html">Got a Question or Idea? Reach Out!</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Rebecca Bennett. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/rebeccaforearth" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/rebeccaforearth" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+</div>
+
+<script>
+// Hero Slideshow
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.getElementById('sliderDots');
+const heroHeadings = [
+    'Every Wild Place a Fragile Truth',
+    'From the Front Lines of Conservation',
+    'Witness the World That Matters',
+    'Ancient Forests, Fragile Futures',
+    'Where Earth Meets Sky',
+    'Faces of Our Shared Humanity',
+    'Life at the Water\u2019s Edge',
+    'The Quiet Detail'
+];
+let currentSlide = 0;
+let slideTimer;
+
+slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+});
+
+function goToSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dotsContainer.children[currentSlide].classList.remove('active');
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dotsContainer.children[currentSlide].classList.add('active');
+    document.getElementById('heroHeading').textContent = heroHeadings[currentSlide];
+    resetTimer();
+}
+function changeSlide(dir) { goToSlide(currentSlide + dir); }
+function resetTimer() {
+    clearInterval(slideTimer);
+    slideTimer = setInterval(() => goToSlide(currentSlide + 1), 5500);
+}
+resetTimer();
+
+// Testimonials
+const tSlides = document.querySelectorAll('.testimonial-slide');
+const tDotsContainer = document.getElementById('testimonialDots');
+let currentT = 0;
+
+tSlides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToTestimonial(i));
+    tDotsContainer.appendChild(dot);
+});
+
+function goToTestimonial(n) {
+    tSlides[currentT].classList.remove('active');
+    tDotsContainer.children[currentT].classList.remove('active');
+    currentT = (n + tSlides.length) % tSlides.length;
+    tSlides[currentT].classList.add('active');
+    tDotsContainer.children[currentT].classList.add('active');
+}
+setInterval(() => goToTestimonial(currentT + 1), 6500);
+
+// Gallery Filter
+document.querySelectorAll('.gallery-filters button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.gallery-filters button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+        });
+    });
+});
+
+// Lightbox
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        document.getElementById('lightboxImg').src = img.src;
+        document.getElementById('lightboxImg').alt = img.alt;
+        document.getElementById('lightbox').classList.add('open');
+    });
+});
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+document.getElementById('lightbox').addEventListener('click', function(e) { if (e.target === this) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+<!-- Netlify Identity Widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', user => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+      }
+    });
+  }
+</script>
+</body>
+</html>

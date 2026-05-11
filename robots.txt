@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beccaforearth.com/sitemap.xml
