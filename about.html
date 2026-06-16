@@ -3,250 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet Rebecca Bennett — conservation photographer, ethical brand storyteller, and keynote speaker based in London. A custodian of our shared home, Rebecca merges artistry and advocacy through photography, speech and prose.">
-    <meta name="keywords" content="Rebecca Bennett photographer, conservation photographer London, wildlife photographer UK, ethical brand photographer, keynote speaker conservation, about Rebecca Bennett">
+    <meta name="description" content="About Rebecca Bennett — ESG Visual Storyteller, conservation photographer and sustainability advocate. MSc Education for Sustainability. Providing authentic, verifiable photography for purpose-led organisations.">
+    <meta name="keywords" content="Rebecca Bennett photographer, ESG visual storyteller, conservation photographer, sustainability photographer, about Rebecca Bennett">
     <meta name="author" content="Rebecca Bennett">
     <meta name="robots" content="index, follow">
-    <title>About Rebecca Bennett | Conservation Photographer, Storyteller & Speaker | London</title>
+    <title>About Rebecca Bennett | ESG Visual Storyteller &amp; Conservation Photographer</title>
     <link rel="canonical" href="https://beccaforearth.com/about.html">
-    <meta property="og:type" content="profile">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://beccaforearth.com/about.html">
-    <meta property="og:title" content="About Rebecca Bennett | Conservation Photographer & Storyteller">
-    <meta property="og:description" content="Meet Rebecca Bennett — conservation photographer, ethical brand storyteller, and keynote speaker. Based in London but fuelled by wilderness.">
-    <meta property="og:image" content="https://beccaforearth.com/assets/RFE/AA-rebecca/Namibia_FamTrip-27-of-137-1024x683.jpg">
-    <meta property="og:site_name" content="Rebecca Bennett | Conservation Photographer & Storyteller">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Rebecca Bennett | Conservation Photographer">
-    <meta name="twitter:description" content="Meet Rebecca Bennett — conservation photographer, ethical brand storyteller, and keynote speaker based in London.">
-    <meta name="twitter:image" content="https://beccaforearth.com/assets/RFE/AA-rebecca/Namibia_FamTrip-27-of-137-1024x683.jpg">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rebecca Bennett",
-      "jobTitle": "Conservation Photographer, Storyteller & Speaker",
-      "url": "https://beccaforearth.com",
-      "image": "https://beccaforearth.com/assets/RFE/AA-rebecca/Namibia_FamTrip-27-of-137-1024x683.jpg",
-      "description": "Conservation photographer, ethical brand storyteller, and keynote speaker based in London.",
-      "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
-      "sameAs": ["https://www.instagram.com/rebeccaforearth", "https://www.linkedin.com/in/rebeccaforearth"]
-    }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="About Rebecca Bennett | ESG Visual Storyteller">
+    <meta property="og:description" content="ESG Visual Storyteller, conservation photographer and sustainability advocate. MSc Education for Sustainability. Photography that makes your impact undeniable.">
+    <meta property="og:image" content="https://beccaforearth.com/assets/RFE/AA-rebecca/icelandportrait2-2.jpg">
+    <meta property="og:site_name" content="Rebecca Bennett | ESG Storytelling Photographer">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .cardo { font-family: 'Cardo', serif; }
-        .lato { font-family: 'Lato', sans-serif; }
-        .gold { color: #b8964a; }
-        .bg-gold { background-color: #b8964a; }
-        .border-gold { border-color: #b8964a; }
-        .hero-about {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                        url('/assets/RFE/AA-rebecca/Namibia_FamTrip-27-of-137-1024x683.jpg') center/cover no-repeat;
-            min-height: 60vh;
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{--gold:#c8a96e;--dark:#1a1a1a;--light-bg:#f9f7f4;--text:#333;--text-light:#666}
+        body{font-family:'Montserrat',sans-serif;color:var(--text);background:#fff;overflow-x:hidden}
+        /* HEADER */
+        header.site-header{background:#fff;border-bottom:1px solid #e8e4de;position:sticky;top:0;z-index:1000}
+        .header-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center;padding:1.2rem 2rem 0.5rem}
+        .site-logo{text-align:center;text-decoration:none;color:var(--dark);display:block;margin-bottom:0.5rem}
+        .site-logo .name{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:400;letter-spacing:0.25em;display:block}
+        .site-logo .tagline{font-size:0.62rem;font-weight:400;letter-spacing:0.3em;color:var(--text-light);display:block}
+        nav.main-nav{display:flex;flex-wrap:wrap;justify-content:center;padding:0.5rem 0 0.2rem}
+        nav.main-nav a{font-size:0.62rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--dark);text-decoration:none;padding:0.4rem 0.9rem;transition:color 0.2s}
+        nav.main-nav a:hover,nav.main-nav a.active{color:var(--gold)}
+        nav.main-nav .sep{color:#ccc;font-size:0.7rem;line-height:2.2}
+        .nav-dropdown{position:relative;display:inline-block}
+        .dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;min-width:270px;border-top:2px solid var(--gold);box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:2000}
+        .dropdown-menu a{display:block;padding:0.75rem 1.2rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--dark);text-decoration:none;border-bottom:1px solid #f0ece6;transition:background 0.2s,color 0.2s}
+        .dropdown-menu a:last-child{border-bottom:none}
+        .dropdown-menu a:hover{background:var(--light-bg);color:var(--gold)}
+        .nav-dropdown:hover .dropdown-menu{display:block}
+        /* PAGE HERO */
+        .page-hero{position:relative;height:70vh;min-height:440px;background-image:url('assets/RFE/AA-rebecca/icelandportrait2-2.jpg');background-size:cover;background-position:center top;display:flex;align-items:flex-end;justify-content:flex-start}
+        .page-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.1) 60%)}
+        .page-hero-content{position:relative;z-index:1;color:#fff;padding:3rem 4rem;max-width:800px}
+        .page-hero-content .eyebrow{font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1rem}
+        .page-hero-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1}
+        /* ABOUT BODY */
+        .about-body{padding:6rem 2rem;background:#fff}
+        .about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr;gap:6rem;align-items:start}
+        .about-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--dark);margin-bottom:2rem;line-height:1.2}
+        .about-text p{font-size:0.88rem;line-height:2;color:var(--text-light);margin-bottom:1.5rem}
+        .about-text p strong{color:var(--dark);font-weight:600}
+        .about-text .closing{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--dark);font-style:italic;margin-top:2rem;line-height:1.6}
+        /* SIDEBAR */
+        .about-sidebar{}
+        .sidebar-block{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid #e8e4de}
+        .sidebar-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+        .sidebar-block h4{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+        .sidebar-block p{font-size:0.8rem;line-height:1.85;color:var(--text-light)}
+        .sidebar-block ul{list-style:none;padding:0}
+        .sidebar-block ul li{font-size:0.8rem;color:var(--text-light);padding:0.4rem 0;border-bottom:1px solid #f0ece6;line-height:1.5}
+        .sidebar-block ul li:last-child{border-bottom:none}
+        .sidebar-block a{display:inline-block;margin-top:1.2rem;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dark);text-decoration:none;border-bottom:1px solid var(--dark);padding-bottom:2px;transition:color 0.2s,border-color 0.2s}
+        .sidebar-block a:hover{color:var(--gold);border-color:var(--gold)}
+        /* IMAGE STRIP */
+        .about-images{display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;padding:0 2rem 5rem;max-width:1200px;margin:0 auto}
+        .about-images img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+        /* CTA */
+        .about-cta{background:var(--dark);padding:6rem 2rem;text-align:center;color:#fff}
+        .about-cta .eyebrow{font-size:0.6rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.2rem}
+        .about-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:300;max-width:700px;margin:0 auto 1.5rem;line-height:1.2}
+        .about-cta p{font-size:0.85rem;line-height:1.9;max-width:580px;margin:0 auto 2.5rem;color:rgba(255,255,255,0.72)}
+        .btn-gold{display:inline-block;background:var(--gold);color:#fff;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;padding:1rem 2.5rem;text-decoration:none;transition:opacity 0.2s;font-family:'Montserrat',sans-serif}
+        .btn-gold:hover{opacity:0.85}
+        /* FOOTER */
+        footer{background:var(--dark);color:rgba(255,255,255,0.7)}
+        .footer-images{display:grid;grid-template-columns:repeat(6,1fr)}
+        .footer-img{aspect-ratio:1;overflow:hidden}
+        .footer-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.65);transition:filter 0.3s;display:block}
+        .footer-img:hover img{filter:brightness(1)}
+        .footer-main{padding:4rem 2rem 2rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem}
+        .footer-brand .name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:#fff;letter-spacing:0.2em;display:block;margin-bottom:0.5rem}
+        .footer-brand .tagline{font-size:0.6rem;letter-spacing:0.25em;color:var(--gold);display:block;margin-bottom:1.5rem}
+        .footer-brand p{font-size:0.78rem;line-height:1.8;color:rgba(255,255,255,0.55)}
+        .footer-col h4{font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+        .footer-col a{display:block;font-size:0.75rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.6rem;transition:color 0.2s}
+        .footer-col a:hover{color:#fff}
+        .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:1.5rem 2rem;text-align:center;font-size:0.7rem;color:rgba(255,255,255,0.35)}
+        .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none}
+        @media(max-width:960px){
+            .about-inner{grid-template-columns:1fr;gap:3rem}
+            .about-images{grid-template-columns:repeat(2,1fr)}
+            .footer-main{grid-template-columns:1fr;gap:2rem}
+            .footer-images{grid-template-columns:repeat(3,1fr)}
+            .page-hero-content{padding:2rem}
         }
-
-        /* Professional Services Dropdown */
-        .nav-dropdown { position: relative; }
-        .nav-dropdown:hover .dropdown-menu,
-        .nav-dropdown:focus-within .dropdown-menu { display: block; }
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-top: 2px solid #b8964a;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-            min-width: 240px;
-            z-index: 100;
-        }
-        .dropdown-menu a {
-            display: block;
-            padding: 0.75rem 1.25rem;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #374151;
-            white-space: nowrap;
-            border-bottom: 1px solid #f3f4f6;
-            transition: background 0.15s, color 0.15s;
-        }
-        .dropdown-menu a:last-child { border-bottom: none; }
-        .dropdown-menu a:hover { background: #fdf8f0; color: #b8964a; }
     </style>
 </head>
-<body class="lato bg-white text-gray-800">
+<body>
 
-    <!-- Navigation -->
-    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-center">
-                <div class="cardo text-2xl md:text-3xl tracking-widest font-bold">REBECCA BENNETT</div>
-                <div class="text-xs tracking-widest text-gray-500 uppercase">Conservationist | Photographer | Storyteller</div>
-            </a>
-            <div class="hidden md:flex space-x-6 text-xs uppercase tracking-widest font-medium">
-                <a href="index.html" class="hover:text-amber-600 transition">Home</a>
-                <div class="nav-dropdown">
-                    <a href="professional-services.html" class="dropdown-trigger hover:text-amber-600 transition flex items-center gap-1">Professional Services</a>
-                    <div class="dropdown-menu">
-                        <a href="photography-for-ethical-brands.html">Photography for Ethical Brands</a>
-                        <a href="documentary-conservation-photography.html">Documentary &amp; Conservation</a>
-                        <a href="visual-marketing.html">Visuals for Atmosphere</a>
-                        <a href="talks.html">Provocative Speaking Engagements</a>
-                    </div>
-                </div>
-                <a href="photography-for-ethical-brands.html" class="hover:text-amber-600 transition">Ethical Brands</a>
-                <a href="documentary-conservation-photography.html" class="hover:text-amber-600 transition">Conservation</a>
-                <a href="talks.html" class="hover:text-amber-600 transition">Talks</a>
-                <a href="portfolio.html" class="hover:text-amber-600 transition">Gallery</a>
-                <a href="blog.html" class="hover:text-amber-600 transition">Blog</a>
-                <a href="collaborations.html" class="hover:text-amber-600 transition">Collaborations</a>
-                <a href="about.html" class="gold font-bold">About</a>
-                <a href="contact.html" class="hover:text-amber-600 transition">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="hero-about flex items-center justify-center text-white text-center px-6">
-        <div>
-            <p class="text-sm uppercase tracking-widest gold mb-4">One Woman's Journey</p>
-            <h1 class="cardo text-5xl md:text-7xl mb-6">Through My Lens,<br>Through My Words<br><em>— In Service.</em></h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto italic text-gray-200">From Soaring Curiosity to Profound Connection</p>
-        </div>
-    </header>
-
-    <!-- Opening Quote -->
-    <section class="bg-stone-50 py-20 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <blockquote class="cardo text-2xl md:text-3xl italic text-gray-700 leading-relaxed">
-                "While people speak of the legacies they'll one day leave behind, my concern is less about the mark I might leave in my wake, but rather how I lead my life while I am here.
-                <br><br>
-                It is in these moments of living, of experiencing this glorious planet and working with others to protect it, that matter."
-            </blockquote>
-        </div>
-    </section>
-
-    <!-- Main Bio -->
-    <section class="py-20 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-            <div>
-                <img src="/assets/RFE/AA-rebecca/Namibia_FamTrip-27-of-137-1024x683.jpg"
-                     alt="Rebecca Bennett photographing in Namibia — conservation photographer and storyteller"
-                     class="w-full rounded-2xl shadow-2xl mb-8">
-                <img src="/assets/RFE/AA-rebecca/icelandportrait2-2.jpg"
-                     alt="Rebecca Bennett portrait — conservation photographer based in London"
-                     class="w-full rounded-2xl shadow-xl">
-            </div>
-            <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>A custodian of our shared home, my pact with this planet was forged in childhood. As a little girl, I'd abscond to the woods to converse with the trees and the miniature creatures living beneath the rocks. I'd experience endless hours of awe as my eyes took in the kaleidoscope of colours, shapes and sizes that painted our world. Yet, it was the ocean with her salty depths and marine marvels that truly anchored my soul to the wild.</p>
-                <p>Years later, sailing into the port of Mombasa, I crossed a threshold into a dimension I hadn't known existed. Even now, words feel too thin to capture the weight of those first moments on African soil. I'd never felt such connection to the people we share this planet with.</p>
-                <p>In time, I would choose studies and pursuits that were linked to the protection of our planet and every one of its inhabitants. Preserving and protecting the dignity of people, wilderness and wildlife had become my mission.</p>
-                <p>Today, my story and work are finding a new, enduring confluence where artistry and advocacy finally meet — a dedicated vigil to the inimitable beauty of our world, filtered through the four pillars of conservation: <strong>Human, Wildlife, Environmental and Marine</strong>. Through photography, speech and prose, I merge images and words — not just to display the world's beauty, but to reveal our profound and privileged responsibility as its guardians.</p>
-                <p>Based in London but fuelled by wilderness, I capture the stories of ethical brands changing <em>how</em> we live and the work of organisations and pioneers protecting <em>where</em> we live. Whether navigating the dense heat of tropical jungle, traversing wildly rugged coastlines, or witnessing precision unfold in a laboratory, my mission is simple: <strong>Give back to Earth what Earth gives to us.</strong></p>
-                <p>In this vein of giving back, through my "Ring-Fenced" Collections and "Wild Collaborations", I'm creating opportunities to focus my lens on the unsung initiatives that lack the attention and funding they deserve — ensuring that 100% of select proceeds return to the soil and sea to preserve, protect and restore the places we call 'home'.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial -->
-    <section class="bg-gray-900 py-16 px-6">
-        <div class="max-w-3xl mx-auto text-center text-white">
-            <blockquote class="cardo text-2xl italic leading-relaxed mb-6">
-                "We often talk about 'putting things in to perspective' but what does that actually mean? Rebecca's talk made me really think about perspective and, how just by shifting our focus… through the lens of a camera, our own biases and general way of thinking… we can achieve clarity and meaning. Rebecca talks with passion, wisdom and creativity. She really instils a sense of wonder and wanderlust for life, for each other and for our natural world."
-            </blockquote>
-            <p class="gold tracking-widest text-sm uppercase">— Rebecca Johnson —</p>
-            <p class="text-gray-400 text-sm mt-1">Journalist</p>
-        </div>
-    </section>
-
-    <!-- Expertise -->
-    <section class="py-20 px-6 bg-stone-50">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="cardo text-4xl md:text-5xl text-center mb-4">Core Expertise &amp; Qualifications</h2>
-            <p class="text-center text-gray-500 mb-16 max-w-2xl mx-auto">An interdisciplinary foundation built across science, conservation, education and communication.</p>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Sustainability &amp; Education</h3>
-                    <p class="text-gray-600">Master's Degree in Education for Sustainability.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Conservation Management</h3>
-                    <p class="text-gray-600">Certified in Conservation Management with extensive global voluntary conservation work.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Interdisciplinary Science</h3>
-                    <p class="text-gray-600">Broad academic background in hard sciences, soft sciences, and specialised marine sciences.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Academic &amp; Documentary Research</h3>
-                    <p class="text-gray-600">Former Researcher for Gemini Documentary Pictures and London South Bank University.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Global &amp; Cultural Competence</h3>
-                    <p class="text-gray-600">Deep understanding of diverse cultures and adaptability gained through extensive experience in less developed countries.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
-                    <h3 class="font-bold text-lg mb-2">Mental Health &amp; Well-being</h3>
-                    <p class="text-gray-600">Extensive training in mental health support for children and adults.</p>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="site-logo">
+            <span class="name">REBECCA BENNETT</span>
+            <span class="tagline">ESG Storytelling &nbsp;|&nbsp; Conservation Photographer &nbsp;|&nbsp; Sustainability Advocate</span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <span class="sep">|</span>
+            <div class="nav-dropdown">
+                <a href="professional-services.html">Professional Services</a>
+                <div class="dropdown-menu">
+                    <a href="esg-storytelling.html">ESG &amp; Sustainability Storytelling</a>
+                    <a href="photography-for-ethical-brands.html">Photography for Ethical Brands</a>
+                    <a href="documentary-conservation-photography.html">Documentary &amp; Conservation</a>
+                    <a href="visual-marketing.html">Visuals for Atmosphere</a>
+                    <a href="talks.html">Provocative Speaking Engagements</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <span class="sep">|</span>
+            <a href="documentary-conservation-photography.html">Conservation First</a>
+            <span class="sep">|</span>
+            <a href="about.html" class="active">About</a>
+            <span class="sep">|</span>
+            <a href="portfolio.html">The Gallery</a>
+            <span class="sep">|</span>
+            <a href="blog.html">Blog</a>
+            <span class="sep">|</span>
+            <a href="collaborations.html">Collaborations</a>
+            <span class="sep">|</span>
+            <a href="talks.html">Talks</a>
+            <span class="sep">|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-    <!-- What I Bring -->
-    <section class="py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="cardo text-4xl md:text-5xl text-center mb-12">What I Bring</h2>
-            <ul class="space-y-6 text-lg text-gray-700">
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span>A <strong>holistic and interdisciplinary approach</strong> to complex challenges, integrating scientific understanding with social and cultural insights.</span></li>
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span><strong>Proven research and analytical skills</strong> from academic and professional engagements.</span></li>
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span><strong>Global adaptability and cultural intelligence</strong> derived from hands-on international experience.</span></li>
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span>A <strong>deep-seated passion for environmental stewardship</strong> and sustainable practices.</span></li>
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span>Commitment to <strong>fostering well-being</strong> through specialised mental health training and pastoral work in schools.</span></li>
-                <li class="flex items-start gap-4"><span class="gold text-2xl mt-1">&#8212;</span><span>Ability to <strong>communicate complex ideas effectively</strong>, engaging with diverse audiences from entrepreneurs to academic peers.</span></li>
-            </ul>
-            <div class="text-center mt-16">
-                <a href="contact.html" class="inline-block bg-gold text-white px-12 py-5 rounded-full text-sm uppercase tracking-widest hover:opacity-90 transition">Get In Touch</a>
-            </div>
-        </div>
-    </section>
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <span class="eyebrow">The Lens of Impact</span>
+        <h1>Every story has a human heart.<br>Every wild place, a fragile truth.</h1>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-16 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
-            <div>
-                <p class="cardo text-2xl text-white mb-2">REBECCA BENNETT</p>
-                <p class="text-sm text-gray-500 uppercase tracking-widest">Conservationist | Photographer | Storyteller</p>
-            </div>
-            <div>
-                <p class="text-sm uppercase tracking-widest text-white mb-4">Explore</p>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="talks.html" class="hover:text-white transition">Transformative Talks</a></li>
-                    <li><a href="photography-for-ethical-brands.html" class="hover:text-white transition">Ethical Brand Photography</a></li>
-                    <li><a href="documentary-conservation-photography.html" class="hover:text-white transition">Conservation Photography</a></li>
-                    <li><a href="portfolio.html" class="hover:text-white transition">The Gallery</a></li>
-                    <li><a href="blog.html" class="hover:text-white transition">Shifting Perspectives: The Blog</a></li>
-                    <li><a href="collaborations.html" class="hover:text-white transition">Wild Collaborations</a></li>
-                    <li><a href="about.html" class="hover:text-white transition">About Rebecca</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+<!-- ABOUT BODY -->
+<section class="about-body">
+    <div class="about-inner">
+        <div class="about-text">
+            <h2>About: The Lens of Impact</h2>
+
+            <p>I have spent my life listening to these truths. From my earliest childhood memories, my compass has been set toward a singular, non-negotiable dedication: to protect the people and the planet that sustain us. It is a commitment that has only deepened as I have matured, transformed by academic rigour and tempered by the urgent realities of our time.</p>
+
+            <p>In a world facing unprecedented systemic shifts, the question is no longer just how we document the change, but how we accelerate it.</p>
+
+            <p><strong>I am an ESG Visual Storyteller focused on transparency and truth.</strong></p>
+
+            <p>I believe that for a business or entity to be truly effective today, it must master two distinct languages: the precision of operational excellence and the resonance of human narrative.</p>
+
+            <p>There is no room for performative optics. Today, we demand radical transparency. I see Environmental, Social, and Governance (ESG) frameworks as more than corporate metrics, and instead as best stewarding practice. Of course, data alone cannot move hearts, and operational integrity — no matter how robust — remains abstract without the compelling, human-centric story. My work exists at this crossroads as I translate your data and operational excellence into a visual narrative that makes your impact undeniable.</p>
+
+            <p>With a background in <strong>Education for Sustainability (MSc)</strong>, a career rooted in <strong>documentary photography</strong>, and a relentless commitment to <strong>research-led advocacy</strong>, I provide the unique visual language for purpose-led missions. This is not about capturing beautiful images. It's about creating the visual assets that prove your commitment to the people and the planet you serve. In other words, I put the visual proof in the metric-dense pudding.</p>
+
+            <p><strong>Why this pivot?</strong> Because the state of the world demands more than just disclosure; it demands evidence. My mission is to provide an <strong>authentic, unbiased record</strong> of the work that matters. I am here to capture the <strong>in situ, ethical reality</strong> of your operations — the tangible, ground-level proof that your dedication to the planet is not just a policy, but a living, breathing practice. Whether you are navigating the complexities of social responsibility or championing regenerative systems, I am here to ensure your commitment is seen with the transparency and honesty that the modern world requires.</p>
+
+            <p>I lend my lens to those who lead with heart. Together, we can translate your commitments into a visual narrative that inspires trust, challenges the status quo, and reminds the world exactly why your work matters.</p>
+
+            <p class="closing">Let's document the future we are building, together.</p>
+        </div>
+
+        <div class="about-sidebar">
+            <div class="sidebar-block">
+                <h4>Credentials</h4>
+                <ul>
+                    <li>MSc Education for Sustainability</li>
+                    <li>Documentary &amp; Conservation Photographer</li>
+                    <li>ESG Visual Storyteller</li>
+                    <li>Keynote Speaker</li>
+                    <li>Research-Led Sustainability Advocate</li>
                 </ul>
             </div>
-            <div>
-                <p class="text-sm uppercase tracking-widest text-white mb-4">Follow</p>
-                <div class="flex gap-4 text-xl">
-                    <a href="https://www.instagram.com/rebeccaforearth" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rebeccaforearth" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-                </div>
+            <div class="sidebar-block">
+                <h4>Specialist Areas</h4>
+                <ul>
+                    <li>ESG &amp; Sustainability Reporting</li>
+                    <li>CSRD Visual Evidence</li>
+                    <li>Wildlife &amp; Conservation Photography</li>
+                    <li>Ethical Brand Photography</li>
+                    <li>Documentary Photography</li>
+                    <li>Keynote &amp; Conference Speaking</li>
+                </ul>
+            </div>
+            <div class="sidebar-block">
+                <h4>Work With Me</h4>
+                <p>Every engagement begins with a conversation. If you are building something worth documenting, I want to hear about it.</p>
+                <a href="contact.html">Get in Touch</a>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-gray-800 text-center text-sm">
-            &copy; 2026 Rebecca Bennett | <a href="#" class="hover:text-white">Privacy Policy</a> | Designed in collaboration with multiMind Media Europe
+    </div>
+</section>
+
+<!-- IMAGE STRIP — 4 images showing range of Rebecca's work -->
+<div class="about-images">
+    <img src="assets/RFE/Wildlife/rb_wildlife-chimpanzee1.jpg" alt="Chimpanzee — wildlife photography by Rebecca Bennett" loading="lazy">
+    <img src="assets/RFE/Woodland/rbb-13.jpg" alt="Woodland — habitat photography by Rebecca Bennett" loading="lazy">
+    <img src="assets/RFE/Portrait/portraituganda1.jpg" alt="Portrait — people photography by Rebecca Bennett" loading="lazy">
+    <img src="assets/RFE/Land & Sky/rb_landsky-9.jpg" alt="Land and sky — landscape photography by Rebecca Bennett" loading="lazy">
+</div>
+
+<!-- CTA -->
+<section class="about-cta">
+    <span class="eyebrow">Ready to Begin?</span>
+    <h2>Let's document the future you are building, together.</h2>
+    <p>Whether you need ESG storytelling photography, ethical brand imagery, or a keynote speaker who will make your audience feel the weight of what is at stake — I am here.</p>
+    <a href="contact.html" class="btn-gold">Get in Touch</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-images">
+        <div class="footer-img"><img src="assets/RFE/BW-12.jpg" alt="Rhino" loading="lazy"></div>
+        <div class="footer-img"><img src="assets/RFE/Wildlife/rb_wildlife-tiger1.jpg" alt="Tiger" loading="lazy"></div>
+        <div class="footer-img"><img src="assets/RFE/Woodland/rbb-13.jpg" alt="Woodland" loading="lazy"></div>
+        <div class="footer-img"><img src="assets/RFE/Portrait/portraituganda3.jpg" alt="Portrait" loading="lazy"></div>
+        <div class="footer-img"><img src="assets/RFE/Land & Sky/rb_landsky-6.jpg" alt="Land and sky" loading="lazy"></div>
+        <div class="footer-img"><img src="assets/RFE/AA-rebecca/icelandportrait2-2.jpg" alt="Rebecca Bennett" loading="lazy"></div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-brand">
+            <span class="name">REBECCA BENNETT</span>
+            <span class="tagline">ESG Storytelling &nbsp;|&nbsp; Conservation Photographer &nbsp;|&nbsp; Sustainability Advocate</span>
+            <p>Providing verifiable, geo-tagged, authentic photography for ESG reports, CSR disclosures, sustainability communications and ethical brand campaigns. Based in the UK, working globally.</p>
         </div>
-    </footer>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="esg-storytelling.html">ESG Storytelling</a>
+            <a href="photography-for-ethical-brands.html">Ethical Brands</a>
+            <a href="documentary-conservation-photography.html">Conservation First</a>
+            <a href="visual-marketing.html">Visuals for Atmosphere</a>
+            <a href="talks.html">Talks</a>
+            <a href="collaborations.html">Collaborations</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="https://www.instagram.com/rebeccaforearth" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/rebeccaforearth" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="contact.html">Get in Touch</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Rebecca Bennett. All rights reserved. &nbsp;|&nbsp; <a href="sitemap.xml">Sitemap</a></p>
+    </div>
+</footer>
+
 </body>
 </html>
